@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Crab</title>
+        <meta name="description" content="Crab">
+        <script src="https://aframe.io/releases/1.2.0/aframe.min.js"></script>
+    </head>
+    <body>
+        <a-scene>
+            <a-assets>      
+                <img id="brittimg" src="img/britt.png" crossorigin="anonymous" />
+                <img id="textcrabimg" src="img/textcrab.png" crossorigin="anonymous" />
+                <img id="buildingimg" src="img/building.png" crossorigin="anonymous" />
+                <a-asset-item id="ghost-obj" src="/obj/10012_crab_v2_iterations-1.obj"></a-asset-item>
+                 
+            </a-assets>
+            <a-sky id="sky" color="#ECECEC"></a-sky>
+            
+            <a-entity id="cam" camera look-controls position="0 1.6 0"></a-entity>
+            
+            <a-box position="0 0 0" width="1000" depth="1000" height="1" color="#9b652f"></a-box>
+            
+             <!--
+            <a-sphere class="cloud"
+                      color="#666466"
+                      scale="4 0.05 0.5"
+                      position="-20 5 -5 "
+                      animation="property: position; from: -20 5 -5; to: 20 5 -5; loop: true; dur: 10000">
+            </a-sphere>
+            <a-sphere class="cloud"
+                      color="#666466"
+                      scale="4 0.05 0.5"
+                      position="-20 5 -5 "
+                      animation="property: position; from: -20 4.5 -5.5; to: 20 4.5 -5.5; loop: true; dur: 8000">
+            </a-sphere>
+            <a-sphere class="cloud"
+                      color="#666466"
+                      scale="4 0.05 0.5"
+                      position="-20 5 -5 "
+                      animation="property: position; from: -20 5 -4; to: 20 5 -4; loop: true; dur: 9000">
+            </a-sphere>
+            <a-sphere class="cloud"
+                      color="#666466"
+                      scale="4 0.05 0.5"
+                      position="-20 5 -5 "
+                      animation="property: position; from: -20 3.5 -5.5; to: 20 3.5 -5.5; loop: true; dur: 8500">
+            </a-sphere>
+            <a-sphere class="cloud"
+                      color="#666466"
+                      scale="4 0.05 0.5"
+                      position="-20 5 -5 "
+                      animation="delay: 2000; property: position; from: -20 5 -5; to: 20 5 -5; loop: true; dur: 10000">
+            </a-sphere>
+            <a-sphere class="cloud"
+                      color="#666466"
+                      scale="4 0.05 0.5"
+                      position="-20 5 -5 "
+                      animation="delay: 3000; property: position; from: -20 4.5 -5.5; to: 20 4.5 -5.5; loop: true; dur: 8000">
+            </a-sphere>
+            <a-sphere class="cloud"
+                      color="#666466"
+                      scale="4 0.05 0.5"
+                      position="-20 5 -5 "
+                      animation="delay: 4000; property: position; from: -20 5 -4; to: 20 5 -4; loop: true; dur: 9000">
+            </a-sphere>
+           -->
+            
+            
+            
+            
+            
+            <a-box id="crab1" material="src: #textcrabimg; repeat: 3 3;"  obj-model="obj: #ghost-obj;" scale="0.07 0.07 0.07" rotation ="315 0 0" position="0 2 200"></a-box>
+            <a-box id="crab2" material="src: #textcrabimg; repeat: 3 3;"  obj-model="obj: #ghost-obj;" scale="0.07 0.07 0.07"position="0 2 200" ></a-box>
+            <a-box id="crab3" material="src: #textcrabimg; repeat: 3 3;"  obj-model="obj: #ghost-obj;" scale="0.07 0.07 0.07"position="0 2 200" ></a-box>
+            <a-box id="crab4" material="src: #textcrabimg; repeat: 3 3;"  obj-model="obj: #ghost-obj;" scale="0.07 0.07 0.07"position="0 2 200" ></a-box>
+            <a-box id="crab5" material="src: #textcrabimg; repeat: 3 3;"  obj-model="obj: #ghost-obj;" scale="0.07 0.07 0.07"position="0 2 200"></a-box>
+            <a-box id="britt" 
+                   material="src: #brittimg; repeat: 1 1; transparent:true"
+                   animation="property: rotation; from: 0 40 0; to: 0 50 0; loop: true; dir: alternate; dur: 500"
+                   animation__2="delay:400; property: position; from: -1 -10 1.2; to: -1 1.25 -1.2; loop: false; dur: 50"
+                   animation__3="delay:400000; property: position; to: -1 -10 1.2; from: -1 1.25 -1.2; loop: false; dur: 50"
+                   animation__4="property: object3D.position.x; from: -1.03; to: -0.97; loop: true; dir: alternate; dur: 500"
+                   position="-1 -10 -1.2" rotation="0 45 0" scale="0.8 1.5 0.01" ></a-box>
+            
+            <a-box id="chem1" 
+                   material="src: #chem1; repeat: 1 1; transparent:true"
+                   color="blue"
+                   animation__2="delay:40000; property: position; from: -1 1.25 200; to: 0 1.25 -1.9; loop: false; dur: 50"
+                   animation__3="delay:400000; property: position; to: -1 1.25 200; from: -1 1.25 -1.9; loop: false; dur: 50"
+                   animation__4="property: object3D.position.x; from: -2; to: 2; loop: true; dir: alternate; dur: 5000"
+                   animation__5="property: object3D.position.y; from: 1; to: 3; loop: true; dir: alternate; dur: 2500"
+                   position="-1 -10 201.2" scale="0.8 1.5 0.01" ></a-box>
+            
+            <a-box id="chem2" 
+                   material="src: #chem1; repeat: 1 1; transparent:true"
+                   color="yellow"
+                   animation__2="delay:40000; property: position; from: -1 1.25 -200; to: 0 1.25 -1.9; loop: false; dur: 50"
+                   animation__3="delay:400000; property: position; to: -1 1.25 -200; from: -1 1.25 -1.9; loop: false; dur: 50"
+                   animation__4="property: object3D.position.x; from: -2.3; to: 3; loop: true; dir: alternate; dur: 3000"
+                   animation__5="property: object3D.position.y; from: 2; to: 2.0; loop: true; dir: alternate; dur: 1000"
+                   position="-1 -10 201.2" scale="0.8 1.5 0.01" ></a-box>
+            
+            <a-box id="chem3" 
+                   material="src: #chem1; repeat: 1 1; transparent:true"
+                   color="green"
+                   animation__2="delay:40000; property: position; from: 1 1.25 200; to: 0 1.25 -1.9; loop: false; dur: 50"
+                   animation__3="delay:400000; property: position; to: -1 1.25 200; from: -1 1.25 -1.9; loop: false; dur: 50"
+                   animation__4="property: object3D.position.x; from: 2; to: -1.8; loop: true; dir: alternate; dur: 2000"
+                   animation__5="property: object3D.position.y; from: 2.7; to: 0.9; loop: true; dir: alternate; dur: 4500"
+                   position="-1 -10 201.2" scale="0.8 1.5 0.01" ></a-box>
+            
+            <!--
+
+                   
+
+            <a-box id="crab3" position="0 2 -4" color="tomato"
+                   animation="delay:1000; property: position; to: 0 2 -2; dur: 2000; easing: linear; loop: false;"
+                   animation__2="delay:4000; property: position; from:0 2 -2; to: 2 2 -2; dur: 1000; "
+                   animation__3="delay:10000; property: position; from:2 2 -2; to: -2 2 -2; dur: 1000; easing: linear; loop: false;"
+                   
+                   ></a-box>
+            -->
+             
+            
+        </a-scene>
+    </body>
+    <script>
+        //animation__3="delay:500; property: rotation; to: 90 90 80; dur: 50; easing: linear; loop: true; dir: alternate; loop: true"
+        /*
+        animation="delay:1000; property: position; to: 0 2 -2; dur: 2000; easing: linear; loop: false;"
+                   animation__2="delay:3000; property: object3D.position.x; to: 2; dur: 1000; easing: linear; loop: true; dir: alternate; loop: 15" 
+                   animation__3="delay:3000; property: object3D.position.y; to: 3; dur: 1000; easing: linear; loop: true; dir: alternate; loop: 15"
+                   */
+           
+        function createCloud(y, z){
+            var dur = (Math.floor(Math.random()*10) + 5) * 1000;
+            var delay = (Math.floor(Math.random()*10)) * 1000;
+            var x = (Math.floor(Math.random()*80) + 20)
+            
+            var sceneEl = document.querySelector('a-scene');   
+            var btn = document.createElement("a-sphere");
+            btn.setAttribute("animation", "delay: " + delay + "; property: position; from: -" + x + " " + y + " " + z + "; to: " + x + " " + y + " " + z + "; loop: true; dur:" + dur + ";");
+            btn.setAttribute("scale", "12 0.9 0.9");
+            btn.setAttribute("color", "#666466");         // Insert text
+            sceneEl.appendChild(btn); 
+            
+        }
+        for(var z=-40; z<=40; z = z+4){
+            createCloud(16, z);     
+        }
+        createCloud(16, 0);     
+        createCloud(16, 3);     
+        
+        
+        
+        
+        function createBuilding(position){
+
+            var sceneEl = document.querySelector('a-scene');   
+            var btn = document.createElement("a-box");
+            btn.setAttribute("material", "src: #buildingimg; repeat: 2 5;");
+            btn.setAttribute("position", position);
+            btn.setAttribute("scale", "5 15 5");
+            btn.setAttribute("color", "#666466");         // Insert text
+            sceneEl.appendChild(btn);  
+        }
+        function cretaeBuildings(){
+            const center = 60
+            const dist = 30;
+            const max = 90;
+            for(var x = 0-max; x<= max; x =x+dist){
+                for(var z = 0-max; z<= max; z = z+dist){
+                    if(!(x > 0-center && x < center && z > 0-center && z > center)){
+                        createBuilding(x + " 7 " + z);
+                    }
+                }
+            }
+        }
+        
+        cretaeBuildings();
+        
+        var addAnim = function(thingname, anim){
+           // console.log(arguments)
+             var tagname = "animation";
+            var i = 2;
+            
+            var thing = document.getElementById(thingname);
+            while(thing.hasAttribute(tagname)){
+                tagname = "animation__" + i;
+                i++;
+            }
+            
+             thing.setAttribute(tagname,anim);
+        }
+        
+        
+        const crabs = [
+            {id:"crab1", pos:"-1 2 -2", showdelay:"1"},
+            {id:"crab2", pos:"1 2 -2", showdelay:"10000"},
+            {id:"crab3", pos:"0 3 -1.8", showdelay:"15000"},
+            {id:"crab4", pos:"1.5 3 -2.5", showdelay:"17000"},            
+            {id:"crab5", pos:"-1.5 3 -2.2", showdelay:"19000"}
+        ];
+        const chem = [
+            {id:"chem1", pos:"0 1.25 -1.9"},
+            {id:"chem2", pos:"1 1.75 -1.9"},
+            {id:"chem3", pos:"-1 1.55 -1.9"}
+                     ];
+        
+        var addAnimShowCrabs = function(crabs){
+            for(var i=0; i<crabs.length; i++){
+                //console.log(crabs[i])
+                addAnim(crabs[i].id, "delay:"+ crabs[i].showdelay +"; property: position; to: " + crabs[i].pos + "; dur: 100; easing: linear; loop: false;");        
+            }
+        }
+        //deprecated
+        var getPositionString = function(x, y ,z, maxVariation){
+                
+            var newx = Number(x) + (Math.floor(Math.random()*maxVariation) -(maxVariation/2));
+            var newy = Number(y)  + (Math.floor(Math.random()*maxVariation) -(maxVariation/2));
+            var newz = Number(z) + (Math.floor(Math.random()*maxVariation) -(maxVariation/2));
+            
+            return "position; to: " + newx + " " + newy + " " + newz;
+            //const colors = ["#FF0000", "#00FF00", "#0000FF", "#FFFF00", "#FFFFFF", "#00FFFF", "#FF00FF", "#000000"];
+            //return "color; to: " + colors[Math.floor(Math.random()*(colors.length-1))]; 
+            //return "material.color; to: #0000FF"; 
+        }
+        var getPosition = function(x, y ,z, maxVariation){
+                
+            var newx = Number(x) + (Math.floor(Math.random()*maxVariation) -(maxVariation/2));
+            var newy = Number(y)  + (Math.floor(Math.random()*maxVariation) -(maxVariation/2));
+            var newz = Number(z) + (Math.floor(Math.random()*maxVariation) -(maxVariation/2));
+            
+            return newx + " " + newy + " " + newz;
+            //const colors = ["#FF0000", "#00FF00", "#0000FF", "#FFFF00", "#FFFFFF", "#00FFFF", "#FF00FF", "#000000"];
+            //return "color; to: " + colors[Math.floor(Math.random()*(colors.length-1))]; 
+            //return "material.color; to: #0000FF"; 
+        }
+        
+        var addAnimDanceCrabs = function(crabs, danceDelay, danceTotalDur, danceMoveDur){
+            for(var i=0; i<crabs.length; i++){
+                var x = crabs[i].pos.split(" ")[0];
+                var y = crabs[i].pos.split(" ")[1];
+                var z = crabs[i].pos.split(" ")[2];
+                
+                
+                var lastDelay = danceDelay;
+                var thisTotalDuration = danceTotalDur;
+               // console.log(arguments)
+                var currDanceMoveDur =  Math.floor((Math.random() + 0.5) * danceMoveDur);
+                   
+                // console.log("currDanceMoveDur: " + currDanceMoveDur + "  thisTotalDuration: " + thisTotalDuration )
+                
+                 var checksum = 0;
+                 var lastPosition = "null";
+                  while(thisTotalDuration > 0){
+                    var currDanceMoveDur =  Math.floor((Math.random() + 0.5) * danceMoveDur);
+                    //console.log("currDanceMoveDur: " + currDanceMoveDur + "  thisTotalDuration: " + thisTotalDuration )
+                    if(thisTotalDuration < currDanceMoveDur){
+                       currDanceMoveDur = thisTotalDuration;
+                    }
+                    thisTotalDuration -= currDanceMoveDur;
+                    
+                    var maxVariation = 2;
+                    var pos = getPosition(x, y, z, maxVariation);  
+                      
+                    //cuidado com isso quando a animacao ficar etsranha  
+                    if(lastPosition == "null") {
+                        lastPosition = crabs[i].pos;    
+                    } 
+                      addAnim(crabs[i].id, "delay:"+ lastDelay +"; property: position; to:" + pos + "; from: "+ lastPosition +" dur: "+ currDanceMoveDur +"; easing: linear; loop: false;");    
+                    
+                     checksum += currDanceMoveDur;
+                    lastDelay += currDanceMoveDur;
+                      lastPosition = pos;
+                      
+                 
+                }
+                addAnim(crabs[i].id, "delay:"+ lastDelay +"; property: position; to:" + crabs[i].pos + "; from: "+ lastPosition +" dur: "+ currDanceMoveDur +"; easing: linear; loop: false;"); 
+                //console.log("checksum: " + checksum + "  danceTotalDur: " + danceTotalDur) 
+                
+                
+               /*
+                
+                
+                addAnim(crabs[i].id, "delay:"+ danceDelay +"; property: object3D.position.x; to: " + xadd + "; dur: "+ danceMoveDur +"; easing: linear; loop: "+ calcLoop +"; dir: alternate;");        
+                addAnim(crabs[i].id, "delay:"+ danceDelay +"; property: object3D.position.x; to: " + yadd + "; dur: "+ danceMoveDur +"; easing: linear; loop: "+ calcLoop +"; dir: alternate;");        
+                addAnim(crabs[i].id, "delay:"+ danceDelay +"; property: object3D.position.x; to: " + zadd + "; dur: "+ danceMoveDur +"; easing: linear; loop: "+ calcLoop +"; dir: alternate;");   */     
+            }
+        }
+        
+        var addAnimFloatCrabs = function(crabs){
+            for(var i=0; i<crabs.length; i++){
+                addAnim(crabs[i].id, "property: rotation; to: 315 2 5; from: 315 -2 -5 dur: 2000; easing: linear; loop:true; dir: alternate;"); 
+            }
+        }
+        
+        var addAnimTechnoSky = function(delaysky, lensky){
+
+            const dursky = 200; 
+            const loop  =5;
+            const skycolors = ["#FF0000", "#00FF00", "#0000FF", "#FFFF00", "#FFFFFF", "#00FFFF", "#FF00FF", "#000000"];
+            
+            var currdelay = delaysky;
+            
+            var len = 0;
+            while(len < lensky){
+              addAnim("sky", "delay: " + currdelay + "; property: material.color; from: #ECECEC; to: "+ skycolors[Math.floor(Math.random(15)*(skycolors.length-1))] +"; loop: "+ loop +"; dir: alternate; dur: " + dursky);
+              currdelay += (dursky*loop);   
+              len += (dursky*loop);   
+            }
+            addAnim("sky", "delay: " + currdelay + "; property: material.color; to: #ECECEC; from: #FF0000; loop: false; dir: alternate; dur: " + dursky);
+            
+        }
+        
+        
+        addAnimShowCrabs(crabs);
+        addAnimFloatCrabs(crabs);
+        
+        addAnimDanceCrabs(crabs, 20000, 15000, 800)
+        
+        //techno
+        addAnimTechnoSky(45000,10000)
+        addAnimDanceCrabs(crabs, 45000, 10000, 300)
+        addAnimDanceCrabs(chem, 45000, 10000, 300)
+        
+        
+        
+            //addAnimDanceCrabs(crabs, 6000, 6000, 2000)
+        
+        
+        
+        /*
+        addAnim("crab1", "delay:1000; property: position; to: 0 2 -2; dur: 2000; easing: linear; loop: false;");
+        addAnim("crab1", "delay:3000; property: object3D.position.x; to: 2; dur: 1000; easing: linear; loop: true; dir: alternate; loop: 15");
+        addAnim("crab1", "delay:3000; property: object3D.position.y; to: 3; dur: 750; easing: linear; loop: true; dir: alternate; loop: 15");
+        addAnim("crab1", "delay:3000; property: object3D.position.z; to: -30; dur: 1250; easing: linear; loop: true; dir: alternate; loop: 15");
+        addAnim("crab1", "delay:500; property: rotation; to: 90 90 80; dur: 50; easing: linear; loop: true; dir: alternate; loop: true");
+        */
+    </script>
+</html>
+
+
+     
